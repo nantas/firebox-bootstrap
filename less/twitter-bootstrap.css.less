@@ -1,0 +1,117 @@
+@import "./bootstrap";
+@import "../superhero/bootswatch";
+@import "../superhero/variables";
+
+@base0-color: #002b36;
+@base1-color: #073642;
+@base2-color: #586e75;
+@base3-color: #657b83;
+@base4-color: #839496;
+@base5-color: #eee8d5;
+@base6-color: #fdf6e3;
+@yellow-color: #b58900;
+@orange-color: #cb4b16;
+@red-color: #dc322f;
+@magenta-color: #d33682;
+@violet-color: #6c71c4;
+@blue-color: #268bd2;
+@cyan-color: #2aa198;
+@green-color: #859900;
+
+a, a:link {
+    cursor: pointer;
+}
+
+body {
+	padding-top: 60px;
+    /* background-color: @base6-color; */
+}
+
+.footer {
+    height: 60px;
+    padding-top:20px;
+}
+
+table {
+	tfoot, tbody {
+		th {
+			border-top: 1px solid #DDD;
+        }
+    }
+}
+
+.btn-group-vertical > .btn:first-child:not(:last-child) {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.btn-group-vertical > .btn:last-child:not(:first-child) {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.sidebar {
+    margin-top: 20px;
+    padding-left: 20px;
+    .btn-group-vertical {
+        border-radius: 5px;
+    }
+    a.btn {
+        text-align: left;
+    }
+    span.glyphicon {
+        padding-right: 20px;
+    }
+    div.alert {
+        margin-top: 20px;
+    }
+    div.alert-dismissable {
+        padding-right: 15px;
+        .close {
+            right: 0px;
+        }
+    }
+}
+
+// vertical divider between columns
+.main-wrapper {
+    border-right: 2px solid #586e75;
+}
+
+.container-footer:extend(.container-fluid) {
+    height: 80px;
+    margin-top: 20px;
+}
+
+div.col-sm-12
+{
+    background-color: @table-bg-hover;
+}
+
+div.col-md-9
+{
+    margin-bottom: 10px;
+}
+
+pre 
+{
+    border-radius: 5px;
+}
+
+.nav-stacked 
+{
+    margin-bottom: 20px;
+}
+
+.modal-dialog{
+    /* position: absolute;                                                             */
+    margin-top: 200px;
+} 
+
+.tooltip {
+    z-index: 2000 !important;
+}
